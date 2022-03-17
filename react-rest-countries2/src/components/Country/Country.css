@@ -1,0 +1,44 @@
+h1 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+}
+img {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+}
+.AllCountris {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 0 50px;
+}
+.Single_country {
+  background-color: aquamarine;
+  border: 2px solid burlywood;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: start;
+}
+@media (max-width: 1024px) {
+  .AllCountris {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .AllCountris {
+    grid-template-columns: 1fr;
+  }
+}
